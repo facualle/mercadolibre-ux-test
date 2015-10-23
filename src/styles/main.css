@@ -1,0 +1,132 @@
+/* ==========================================================================
+   VENDOR STYLES
+   ========================================================================== */
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+/* ==========================================================================
+   MODULES STYLES
+   ========================================================================== */
+
+/* line 16, ../sass/main.scss */
+
+body {
+  background-color: #FFF059;
+  padding: 50px 0px;
+  background-image: url("/images/body-bg.png");
+  background-repeat: repeat;
+}
+
+/* line 23, ../sass/main.scss */
+
+wrapper {
+  padding: 20px;
+  background-color: #F4F4F4;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  border: 5px solid #EADE61;
+  border-radius: 2px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* line 34, ../sass/main.scss */
+
+header {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* line 37, ../sass/main.scss */
+
+header h1 {
+  font-size: 2.5em;
+}
+
+/* line 43, ../sass/main.scss */
+
+.description .image {
+  text-align: center;
+}
+
+/* line 45, ../sass/main.scss */
+
+.description .image img {
+  width: 90%;
+}
+
+/* line 50, ../sass/main.scss */
+
+.description .right-column {
+  padding: 10px 35px;
+}
+
+/* line 53, ../sass/main.scss */
+
+.description .right-column .product-info {
+  margin-bottom: 20px;
+}
+
+/* line 56, ../sass/main.scss */
+
+.description .right-column .product-info legend {
+  float: left;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -999px;
+  vertical-align: top;
+}
+
+/* line 63, ../sass/main.scss */
+
+.description .right-column .product-info .price {
+  margin-bottom: 10px;
+}
+
+/* line 65, ../sass/main.scss */
+
+.description .right-column .product-info .price strong {
+  font-size: 2em;
+}
+
+/* line 67, ../sass/main.scss */
+
+.description .right-column .product-info .price strong sup {
+  font-size: 0.4em;
+}
+
+/* line 72, ../sass/main.scss */
+
+.description .right-column .product-info .ch-form-row {
+  padding: 2px 0px;
+}
+
+/* line 74, ../sass/main.scss */
+
+.description .right-column .product-info .ch-form-row label {
+  text-align: left;
+  width: 60px;
+  padding: 2px 5px;
+}
+
+/* line 79, ../sass/main.scss */
+
+.description .right-column .product-info .ch-form-row select {
+  margin: 2px 0px;
+}
+
+/* line 83, ../sass/main.scss */
+
+.description .right-column .product-info .buy {
+  margin: 15px 0px 10px 5px;
+}
+
+/* line 86, ../sass/main.scss */
+
+.description .right-column .product-info .ch-form-hint {
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
