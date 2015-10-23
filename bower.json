@@ -1,0 +1,7 @@
+{
+  "name": "mercadolibre-ux-test",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "latest"
+  }
+}
