@@ -17,7 +17,7 @@ Technologies Used:
   - Mesh
   
 ### Getting Started
-Download all the content of this repo
+Download all the content of this repo and then:
 ```sh
 $ cd mercadolibre-ux-test-master
 ```
@@ -29,7 +29,7 @@ Now, if you want to Develop:
 ```sh
 $ grunt watch
 ```
-If you want to generate de dist version
+If you want to generate the dist version
 ```sh
 $ grunt build
 ```
