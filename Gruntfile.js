@@ -78,7 +78,7 @@ module.exports = function (grunt) {
         },
         
         //---------------------------------------------------------------------------------------
-        //Concat in one file CSS files and JS diles
+        //Concat in one file CSS files and JS files
         //---------------------------------------------------------------------------------------
 		concat : {
 			dist : {
