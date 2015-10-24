@@ -1,7 +1,9 @@
 # MercadoLibre UX Test
 Here you can find the source code of the Mercadolibre UX Test.
-In the src folder, there are the files to develop.
-in the dist folder, you can get the minified files version.
+In the src folder,you will find the files to develop.
+in the dist folder, you will find the minified files version.
+
+[Live Demo]
 
 Develop:
 ```sh
@@ -34,3 +36,4 @@ Website : [Link]
 [//]: # 
 
 [Link]: <http://www.fallemand.com>
+[Live Demo]: <http://facualle.github.io/mercadolibre-ux-test/>
