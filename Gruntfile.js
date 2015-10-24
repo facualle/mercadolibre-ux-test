@@ -174,10 +174,16 @@ module.exports = function (grunt) {
 				[
 					{
 						expand: true,
+                        cwd: 'src/components/chico-ui/assets/',
+						src: ['*'], 
+                        dest: 'dist/assets/'
+					},
+                    {
+						expand: true,
 						cwd: 'src',
 						src: ['index.html'],
 						dest: 'dist/'
-					}
+					},
 				]
 			},
 		},
