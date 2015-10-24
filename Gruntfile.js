@@ -7,7 +7,9 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+        //---------------------------------------------------------------------------------------
 		//Process CSS (sass and autoprefixer)
+        //---------------------------------------------------------------------------------------
 		sass: {
 			dev: {
 				options: {
@@ -40,12 +42,14 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: [
-					{ src: ['dist/temp/main.css'], dest: 'src/temp/main.css' }
+					{ src: ['dist/temp/main.css'], dest: 'dist/temp/main.css' }
 				]
 			},
 		},
-
-		//Process Javascript
+        
+        //---------------------------------------------------------------------------------------
+		//Minify Javascript
+        //---------------------------------------------------------------------------------------
 		uglify: {
 			dist: {
 				files:
@@ -57,6 +61,10 @@ module.exports = function (grunt) {
 				]
 			},
 		},
+        
+        //---------------------------------------------------------------------------------------
+        //Minify CSS
+        //---------------------------------------------------------------------------------------
         cssmin: {
             target: {
                 files: [{
@@ -68,7 +76,10 @@ module.exports = function (grunt) {
                 }]
             }
         },
-
+        
+        //---------------------------------------------------------------------------------------
+        //Concat in one file CSS files and JS diles
+        //---------------------------------------------------------------------------------------
 		concat : {
 			dist : {
                 files : {
@@ -78,20 +89,27 @@ module.exports = function (grunt) {
 			}
 		},
 
-		//Process html
+        //---------------------------------------------------------------------------------------
+		//Change Comment Blocks in HTML
+        //---------------------------------------------------------------------------------------
 		useminPrepare: {
 		  html: 'dist/index.html',
 		  options: {
 		  	uglify: 'uglify'
 		  },
 		},
-
-		//clean dist folders
+        
+        //---------------------------------------------------------------------------------------
+		//Clean dist folder. remove temp folder
+        //---------------------------------------------------------------------------------------
 		clean: {
 			dist: ['dist/js/*', 'dist/images/*', 'dist/styles/*', 'dist/index.html'],
             afterDist: ['dist/temp']
 		},
 
+        //---------------------------------------------------------------------------------------
+        //Minify HTML
+        //---------------------------------------------------------------------------------------
 		usemin: {
 		  html: 'dist/index.html'
 		},
@@ -113,7 +131,9 @@ module.exports = function (grunt) {
 		        }
 		    },
 
+        //---------------------------------------------------------------------------------------
 		//Process images
+        //---------------------------------------------------------------------------------------
 		imagemin: {
 		    png: {
                 options: {
@@ -130,22 +150,24 @@ module.exports = function (grunt) {
                 ]
 		    },
 		    jpg: {
-		      options: {
-		        progressive: true
-		      },
-		      files: [
-		        {
-		          expand: true,
-		          cwd: 'src/images/',
-		          src: ['**/*.jpg'],
-		          dest: 'dist/images/',
-		          ext: '.jpg'
-		        }
-		      ]
+                options: {
+                    progressive: true
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src/images/',
+                        src: ['**/*.jpg'],
+                        dest: 'dist/images/',
+                        ext: '.jpg'
+                    }
+                ]
 		    }
-		  },
+        },
 
-		//copy files from components to js
+        //---------------------------------------------------------------------------------------
+		//Copy files from components to js
+        //---------------------------------------------------------------------------------------
 		copy: {
 			dist: {
 				files:
@@ -159,14 +181,18 @@ module.exports = function (grunt) {
 				]
 			},
 		},
+        
+        //---------------------------------------------------------------------------------------
+        //Watch for changes in Files
+        //---------------------------------------------------------------------------------------
 		watch: {
-				/* watch to see if the sass files are changed, compile and add prefixes */
+                //Watch Sass files and compile them with prefixes
 				styles: {
 					files: ['src/sass/**/*.{scss,sass}'],
 					tasks: ['sass:dev', 'autoprefixer:dev']
 				},
 
-				/* watch our files for change, reload */
+				// Watch our files for change and reload 
 				livereload: {
 					files: ['src/*.html', 'src/*.php', 'src/styles/*.css', 'src/images/**/*.{png,jpg,jpeg,gif,webp,svg}', 'src/*.js'],
 					options: {
@@ -174,9 +200,12 @@ module.exports = function (grunt) {
 					}
 				},
 			},
+        
 		});
 
+    //---------------------------------------------------------------------------------------
 	//Task list
+    //---------------------------------------------------------------------------------------
 	grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.registerTask('build', ['clean:dist','copy:dist', 'sass:dist', 'autoprefixer:dist', 'concat:dist', 'uglify:dist', 'cssmin', 'useminPrepare', 'usemin', 'htmlmin:dist', 'imagemin', 'clean:afterDist']);

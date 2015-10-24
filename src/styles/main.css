@@ -1,28 +1,24 @@
 /* ==========================================================================
-   VENDOR STYLES
-   ========================================================================== */
-
-/* ==========================================================================
    BASE STYLES
-   ========================================================================== */
+============================================================================ */
 
 /* ==========================================================================
-   MODULES STYLES
-   ========================================================================== */
+   PRINCIPAL STYLES
+============================================================================ */
 
-/* line 16, ../sass/main.scss */
+/* line 9, ../sass/main.scss */
 
 body {
   background-color: #FFF059;
   padding: 50px 0px;
-  background-image: url("/images/body-bg.png");
+  background-image: url("../images/body-bg.png");
   background-repeat: repeat;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 
-wrapper {
-  padding: 20px;
+#wrapper {
+  padding: 10px 20px;
   background-color: #F4F4F4;
   display: block;
   max-width: 650px;
@@ -32,46 +28,52 @@ wrapper {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* line 34, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 
 header {
-  padding: 20px 10px;
-  text-align: center;
+  padding: 10px 10px 20px;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 
 header h1 {
   font-size: 2.5em;
+  letter-spacing: 0.7px;
+}
+
+/* ==========================================================================
+   CONTENT STYLES
+============================================================================ */
+
+/* line 40, ../sass/main.scss */
+
+.description .image {
+  width: 90%;
+  text-align: center;
 }
 
 /* line 43, ../sass/main.scss */
 
-.description .image {
-  text-align: center;
+.description .image img {
+  width: 95%;
 }
 
-/* line 45, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 
-.description .image img {
-  width: 90%;
+.description .right-column {
+  width: 95%;
 }
 
 /* line 50, ../sass/main.scss */
 
-.description .right-column {
-  padding: 10px 35px;
+.description .right-column .buy-product {
+  padding: 10px 25px;
+  margin-bottom: 10px;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 
-.description .right-column .product-info {
-  margin-bottom: 20px;
-}
-
-/* line 56, ../sass/main.scss */
-
-.description .right-column .product-info legend {
+.description .right-column .buy-product legend {
   float: left;
   overflow: hidden;
   padding: 0;
@@ -79,33 +81,33 @@ header h1 {
   vertical-align: top;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 
-.description .right-column .product-info .price {
+.description .right-column .buy-product .price {
   margin-bottom: 10px;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 
-.description .right-column .product-info .price strong {
-  font-size: 2em;
+.description .right-column .buy-product .price strong span {
+  font-size: 2.5em;
 }
 
 /* line 67, ../sass/main.scss */
 
-.description .right-column .product-info .price strong sup {
+.description .right-column .buy-product .price strong sup {
   font-size: 0.4em;
 }
 
 /* line 72, ../sass/main.scss */
 
-.description .right-column .product-info .ch-form-row {
+.description .right-column .buy-product .ch-form-row {
   padding: 2px 0px;
 }
 
 /* line 74, ../sass/main.scss */
 
-.description .right-column .product-info .ch-form-row label {
+.description .right-column .buy-product .ch-form-row label {
   text-align: left;
   width: 60px;
   padding: 2px 5px;
@@ -113,20 +115,173 @@ header h1 {
 
 /* line 79, ../sass/main.scss */
 
-.description .right-column .product-info .ch-form-row select {
+.description .right-column .buy-product .ch-form-row select {
   margin: 2px 0px;
 }
 
 /* line 83, ../sass/main.scss */
 
-.description .right-column .product-info .buy {
+.description .right-column .buy-product .buy {
   margin: 15px 0px 10px 5px;
 }
 
 /* line 86, ../sass/main.scss */
 
-.description .right-column .product-info .ch-form-hint {
+.description .right-column .buy-product .ch-form-hint {
   margin-left: 5px;
+}
+
+/* line 92, ../sass/main.scss */
+
+.description .similar-products {
+  margin-left: 25px;
+}
+
+/* line 94, ../sass/main.scss */
+
+.description .similar-products .ch-shownby-pointerenter {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   CHICO UI MODIFICATIONS STYLES
+============================================================================ */
+
+/* line 104, ../sass/main.scss */
+
+.ch-carousel-disabled {
+  display: block;
+  opacity: .7;
+}
+
+/* line 109, ../sass/main.scss */
+
+.ch-carousel.ch-carousel-sm {
+  margin-left: -15px;
+  overflow-y: hidden;
+}
+
+/* line 112, ../sass/main.scss */
+
+.ch-carousel.ch-carousel-sm li {
+  margin-right: 5px !important;
+}
+
+/* line 114, ../sass/main.scss */
+
+.ch-carousel.ch-carousel-sm li img {
+  max-width: 60px;
+  height: 55px;
+  padding: 2px;
+  margin: 0px;
+}
+
+/* line 124, ../sass/main.scss */
+
+.ch-carousel-next,
+.ch-carousel-prev {
+  width: 40px;
+}
+
+/* line 127, ../sass/main.scss */
+
+.ch-carousel-mask {
+  margin: 0 45px;
+}
+
+/* line 131, ../sass/main.scss */
+
+.ch-color-ok {
+  color: #468847;
+}
+
+/* line 135, ../sass/main.scss */
+
+.ch-color-info {
+  color: #3a87ad;
+}
+
+/* line 139, ../sass/main.scss */
+
+hr {
+  border-bottom: 1px dashed #ccc;
+}
+
+/* ==========================================================================
+   ONLY CSS TABS
+============================================================================ */
+
+/* line 147, ../sass/main.scss */
+
+.css-tabs {
+  position: relative;
+  clear: both;
+  margin-top: 10px;
+  min-height: 200px;
+}
+
+/* line 153, ../sass/main.scss */
+
+.css-tabs .tab:first-child label {
+  margin-left: 20px;
+}
+
+/* line 157, ../sass/main.scss */
+
+.css-tabs .tab {
+  float: left;
+}
+
+/* line 159, ../sass/main.scss */
+
+.css-tabs .tab label {
+  margin-left: 4px;
+  position: relative;
+  left: 1px;
+  top: 0px;
+  -webkit-transition: background-color .17s linear;
+  transition: background-color .17s linear;
+  cursor: pointer;
+}
+
+/* line 167, ../sass/main.scss */
+
+.css-tabs .tab .tab-content {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  background: white;
+  right: 0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  -webkit-transition: opacity .4s linear;
+  transition: opacity .4s linear;
+  opacity: 0;
+}
+
+/* line 178, ../sass/main.scss */
+
+.css-tabs .tab input[type="radio"] {
+  display: none;
+}
+
+/* line 181, ../sass/main.scss */
+
+.css-tabs .tab input[type="radio"]:checked ~ label {
+  background: white;
+  z-index: 2;
+  background-image: -webkit-linear-gradient(#EEE, #FFF 25px);
+  background-image: linear-gradient(#EEE, #FFF 25px);
+  border-bottom: 1px solid #FFF;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+/* line 189, ../sass/main.scss */
+
+.css-tabs .tab input[type="radio"]:checked ~ label ~ .tab-content {
+  z-index: 1;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
