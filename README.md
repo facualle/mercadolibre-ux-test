@@ -5,14 +5,6 @@ in the dist folder, you will find the minified files version.
 
 [Live Demo]
 
-Develop:
-```sh
-$ grunt watch
-```
-Build:
-```sh
-$ grunt build
-```
 Technologies Used:
   - NodeJS
   - Grunt
@@ -23,6 +15,24 @@ Technologies Used:
   - Yeoman
   - ChicoUI
   - Mesh
+  
+### Getting Started
+Download all the content of this repo
+```sh
+$ cd mercadolibre-ux-test-master
+```
+Install all NodeJS dependencies
+```sh
+$ npm install
+```
+Now, if you want to Develop:
+```sh
+$ grunt watch
+```
+If you want to generate de dist version
+```sh
+$ grunt build
+```
 
 ### Version
 1.0
