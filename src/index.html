@@ -60,10 +60,10 @@
                             <fieldset>
                                 <legend>Details</legend>
                                 <div class="ch-form-row">
-                                    <label for="select2">
+                                    <label for="quantity">
                                         Quantity:
                                     </label>
-                                    <select data-align="top">
+                                    <select id="quantity" data-align="top">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -77,10 +77,10 @@
                                     </select>
                                 </div>
                                 <div class="ch-form-row">
-                                    <label for="select2">
+                                    <label for="paymentsNumber">
                                         Payments:
                                     </label>
-                                    <select data-align="top">
+                                    <select id="paymentsNumber" data-align="top">
                                         <option value="1">1</option>
                                         <option value="3">3</option>
                                         <option value="6">6</option>
@@ -125,17 +125,16 @@
                     
                     <div class="css-tabs">
                         <div class="tab" role="tab">
-                            <input type="radio" id="tabDescription" name="tabs">
+                            <input type="radio" id="tabDescription" name="tabs" aria-hidden="true">
                             <label for="tabDescription" class="ch-tab">Product description</label>
                             <div class="tab-content">
                                 <h2>Product Description</h2>
                                 <hr />
-                                <p itemprop="description">Vestibulum posuere purus non enim pharetra vel vulputate eros hendrerit. Ut pulvinar placerat risus quis interdum. Mauris eget tempus risus. Aenean accumsan dolor in lorem elementum ac tincidunt urna rutrum. Sed sit amet nunc velit, vitae tincidunt ipsum. Fusce mattis elementum justo, et lacinia odio pharetra a.
-                                . Aenean accumsan dolor in lorem elementum ac tincidunt urna rutrum. Sed sit amet nunc velit.</p>
+                                <p itemprop="description">Vestibulum posuere purus non enim pharetra vel vulputate eros hendrerit. Ut pulvinar placerat risus quis interdum. Mauris eget tempus risus. Aenean accumsan dolor in lorem elementum ac tincidunt urna rutrum. Sed sit amet nunc velit, vitae tincidunt ipsum. Fusce mattis elementum justo, et lacinia odio pharetra a.</p>
                             </div>
                         </div>
                         <div class="tab" role="tab">
-                            <input type="radio" id="tabQuestions" name="tabs" checked>
+                            <input type="radio" id="tabQuestions" name="tabs" checked aria-hidden="true">
                             <label for="tabQuestions" class="ch-tab">Questions</label>
                             <div class="tab-content">
                                 <strong class="ch-color-info">Buyer</strong>

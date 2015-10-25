@@ -25,9 +25,10 @@ body {
 }
 
 header {
-    padding: 10px 10px 20px;;
+    padding: 0px 10px 5px;
     h1 {
         font-size: 2.5em;
+        line-height: 1em;
         letter-spacing: 0.7px;
     }
 }
@@ -148,7 +149,7 @@ hr {
     position: relative;   
     clear: both;
     margin-top:10px;
-    min-height: 200px;
+    min-height: 180px;
     
     .tab:first-child label {
         margin-left:20px;
@@ -190,5 +191,16 @@ hr {
             z-index: 1;
             opacity: 1;
         }
+    }
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+============================================================================ */
+
+ /* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 720px) {
+    header h1 {
+        font-size: 1.8em;
     }
 }

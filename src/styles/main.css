@@ -31,13 +31,14 @@ body {
 /* line 27, ../sass/main.scss */
 
 header {
-  padding: 10px 10px 20px;
+  padding: 0px 10px 5px;
 }
 
 /* line 29, ../sass/main.scss */
 
 header h1 {
   font-size: 2.5em;
+  line-height: 1em;
   letter-spacing: 0.7px;
 }
 
@@ -45,33 +46,33 @@ header h1 {
    CONTENT STYLES
 ============================================================================ */
 
-/* line 40, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 
 .description .image {
   width: 90%;
   text-align: center;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 
 .description .image img {
   width: 95%;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 
 .description .right-column {
   width: 95%;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 
 .description .right-column .buy-product {
   padding: 10px 25px;
   margin-bottom: 10px;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 
 .description .right-column .buy-product legend {
   float: left;
@@ -81,31 +82,31 @@ header h1 {
   vertical-align: top;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 
 .description .right-column .buy-product .price {
   margin-bottom: 10px;
 }
 
-/* line 64, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 
 .description .right-column .buy-product .price strong span {
   font-size: 2.5em;
 }
 
-/* line 67, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 
 .description .right-column .buy-product .price strong sup {
   font-size: 0.4em;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 
 .description .right-column .buy-product .ch-form-row {
   padding: 2px 0px;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 
 .description .right-column .buy-product .ch-form-row label {
   text-align: left;
@@ -113,31 +114,31 @@ header h1 {
   padding: 2px 5px;
 }
 
-/* line 79, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 
 .description .right-column .buy-product .ch-form-row select {
   margin: 2px 0px;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 
 .description .right-column .buy-product .buy {
   margin: 15px 0px 10px 5px;
 }
 
-/* line 86, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 
 .description .right-column .buy-product .ch-form-hint {
   margin-left: 5px;
 }
 
-/* line 92, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 
 .description .similar-products {
   margin-left: 25px;
 }
 
-/* line 94, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 
 .description .similar-products .ch-shownby-pointerenter {
   cursor: pointer;
@@ -147,27 +148,27 @@ header h1 {
    CHICO UI MODIFICATIONS STYLES
 ============================================================================ */
 
-/* line 104, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 
 .ch-carousel-disabled {
   display: block;
   opacity: .7;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 
 .ch-carousel.ch-carousel-sm {
   margin-left: -15px;
   overflow-y: hidden;
 }
 
-/* line 112, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 
 .ch-carousel.ch-carousel-sm li {
   margin-right: 5px !important;
 }
 
-/* line 114, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 
 .ch-carousel.ch-carousel-sm li img {
   max-width: 60px;
@@ -176,32 +177,32 @@ header h1 {
   margin: 0px;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 
 .ch-carousel-next,
 .ch-carousel-prev {
   width: 40px;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 
 .ch-carousel-mask {
   margin: 0 45px;
 }
 
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 
 .ch-color-ok {
   color: #468847;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 
 .ch-color-info {
   color: #3a87ad;
 }
 
-/* line 139, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 
 hr {
   border-bottom: 1px dashed #ccc;
@@ -211,28 +212,28 @@ hr {
    ONLY CSS TABS
 ============================================================================ */
 
-/* line 147, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 
 .css-tabs {
   position: relative;
   clear: both;
   margin-top: 10px;
-  min-height: 200px;
+  min-height: 180px;
 }
 
-/* line 153, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 
 .css-tabs .tab:first-child label {
   margin-left: 20px;
 }
 
-/* line 157, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 
 .css-tabs .tab {
   float: left;
 }
 
-/* line 159, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 
 .css-tabs .tab label {
   margin-left: 4px;
@@ -244,7 +245,7 @@ hr {
   cursor: pointer;
 }
 
-/* line 167, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 
 .css-tabs .tab .tab-content {
   position: absolute;
@@ -259,13 +260,13 @@ hr {
   opacity: 0;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 
 .css-tabs .tab input[type="radio"] {
   display: none;
 }
 
-/* line 181, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 
 .css-tabs .tab input[type="radio"]:checked ~ label {
   background: white;
@@ -277,11 +278,25 @@ hr {
   letter-spacing: -0.6px;
 }
 
-/* line 189, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 
 .css-tabs .tab input[type="radio"]:checked ~ label ~ .tab-content {
   z-index: 1;
   opacity: 1;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+============================================================================ */
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 720px) {
+  /* line 203, ../sass/main.scss */
+
+  header h1 {
+    font-size: 1.8em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
