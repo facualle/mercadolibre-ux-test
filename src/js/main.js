@@ -1,4 +1,4 @@
-/*!
+/*
  * MercadoLibre UX Test v1.0
  * https://github.com/facualle/mercadolibre-ux-test/
  *
